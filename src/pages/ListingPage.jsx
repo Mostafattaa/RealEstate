@@ -16,6 +16,7 @@ const ListingPage = () => {
     title: "Renovated Apartment",
     description: "Single Apartment",
     location: "New York",
+    rating:4,
     price: 1000,
     type: "Apartment",
     sellRent: "Rent",
@@ -25,6 +26,7 @@ const ListingPage = () => {
     title: "New Building",
     description: "Villa",
     location: "Los Angeles",
+    rating:4,
     price: 1500,
     type: "Villa",
     sellRent: "Sell",
@@ -34,6 +36,7 @@ const ListingPage = () => {
     title: "Renovated Grand Villa",
     description: "Grand Villa",
     location: "Miami",
+    rating:4.5,
     price: 1650000,
     type: "Villa",
     sellRent: "Sell",
@@ -43,6 +46,7 @@ const ListingPage = () => {
     title: "Modern Villa",
     description: "Luxury with pool & garden",
     location: "San Francisco",
+    rating:5,
     price: 1800000,
     type: "Villa",
     sellRent: "Sell",
@@ -52,6 +56,7 @@ const ListingPage = () => {
     title: "Family House",
     description: "Perfect for families",
     location: "Chicago",
+    rating:3,
     price: 950,
     type: "House",
     sellRent: "Rent",
@@ -61,6 +66,7 @@ const ListingPage = () => {
     title: "Town House",
     description: "Stylish and compact",
     location: "Boston",
+    rating:4,
     price: 1200000,
     type: "Townhouse",
     sellRent: "Sell",
@@ -70,6 +76,7 @@ const ListingPage = () => {
     title: "City Apartment",
     description: "Modern apartment with city view",
     location: "Seattle",
+    rating:3.5,
     price: 700,
     type: "Apartment",
     sellRent: "Rent",
@@ -79,6 +86,7 @@ const ListingPage = () => {
     title: "Countryside Cottage",
     description: "Peaceful and quiet",
     location: "Vermont",
+    rating:4,
     price: 650000,
     type: "House",
     sellRent: "Sell",
@@ -88,6 +96,7 @@ const ListingPage = () => {
     title: "Beachfront Bungalow",
     description: "Steps from the ocean",
     location: "San Diego",
+    rating:3.5,
     price: 2000,
     type: "House",
     sellRent: "Rent",
@@ -97,7 +106,8 @@ const ListingPage = () => {
     title: "Downtown Loft",
     description: "Loft-style apartment",
     location: "New York",
-    price: 1300,
+    rating:4,
+    price: 550000,
     type: "Apartment",
     sellRent: "Sell",
   },
@@ -106,7 +116,8 @@ const ListingPage = () => {
     title: "Luxury Penthouse",
     description: "Top-floor skyline views",
     location: "Las Vegas",
-    price: 3000,
+    rating:4.5,
+    price: 2000000,
     type: "Villa",
     sellRent: "Sell",
   }
@@ -270,6 +281,7 @@ const ListingPage = () => {
               key={index}
               image={property.image}
               title={property.title}
+              rating={property.rating}
               description={property.description}
               price={`$${property.price}`}
               type={property.type}
