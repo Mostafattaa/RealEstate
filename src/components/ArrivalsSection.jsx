@@ -7,7 +7,7 @@ const ArrivalsSection = () => {
       image: "/src/assets/imgs/House-6.jpg",
       title: "Modern Villa",
       rating: 5,
-      description: "Spacious villa with luxury modern amenities.",
+      description: "Spacious villa with luxury and modern amenities.",
       price: "$750/night"
     },
     {
@@ -43,7 +43,7 @@ const ArrivalsSection = () => {
           <p className="text-gray-600">We Offer A Wide Range Of Variety</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
           {properties.map((property, index) => (
             <PropertyCard
               key={index}
@@ -51,7 +51,7 @@ const ArrivalsSection = () => {
               title={property.title}
               rating={property.rating}
               description={property.description}
-              price={property.price}
+              price={property.price}  
             />
           ))}
         </div>
